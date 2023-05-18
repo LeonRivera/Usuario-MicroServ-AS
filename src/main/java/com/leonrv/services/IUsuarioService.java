@@ -11,8 +11,8 @@ public interface IUsuarioService {
 
     public Page<Usuario> getPage(Pageable pageable);
 
-    public List<Usuario> findAll();
-
+    public List<Usuario> findAll(Integer pageNo, Integer pageSize, String sortBy);
+    
     public Usuario getById(Long id);
 
     public Usuario save(Usuario entity);
